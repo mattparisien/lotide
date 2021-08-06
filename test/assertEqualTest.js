@@ -1,5 +1,4 @@
 // TESTING CODE FOR ASSERT EQUAL
-
 const assertEqual = require('../assertEqual');
 
 console.log(assertEqual("Lighthouse Labs", "Bootcamp"));
