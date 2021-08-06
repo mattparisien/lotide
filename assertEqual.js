@@ -13,4 +13,6 @@ console.log(assertEqual("Javascript", "Node"));
 console.log(assertEqual(10, 25));
 console.log(assertEqual(2, 2));
 
+module.exports = assertEqual;
+
 
