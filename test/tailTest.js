@@ -1,17 +1,5 @@
-//This function compares two values and returns true
-// if they are equal in value & in type
-
-
-//Function which returns the tail of an array
-const tail = function(array) {
-  let finalArr = [];
-  for (let i = 0; i < array.length; i++) {
-    if (i !== 0)
-      finalArr.push(array[i]);
-  }
-  return finalArr;
-};
-
+const tail = require('../tail');
+const assertEqual = require('../assertEqual');
 
 // //Test Case 1: Check the Returned Array Elements
 
@@ -25,8 +13,3 @@ console.log(assertEqual(result[1], "Labs"));
 const words = ["YO YO", "Lighthouse", "Labs"];
 console.log(tail(words));
 assertEqual(words.length, 3);
-
-module.exports = tail;
-
-
-
