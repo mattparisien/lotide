@@ -1,6 +1,6 @@
 // TESTING CODE FOR HEAD 
-
 const head = require("../head");
+const assertEqual = require("../assertEqual");
 
 assertEqual(head([1,2,3]), 1); // should pass 
 assertEqual(head(["Caroline", "Denis", "Matthew"]), "Pizza"); // should fail
