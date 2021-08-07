@@ -33,7 +33,9 @@ const without = function(source, itemsToRemove) {
 };
 
 //Test Cases
-const words = ["coffee", "tea", "lemonade"];
-console.log(without(words, ["lemonade"])); // returns ["lemonade"]
-console.log(assertArraysEqual(words, ["coffee", "tea", "lemonade"])); // it's a match!
-console.log(assertArraysEqual(without(words, ["lemonade"]), ["lemonade"])); // it's a match!
+// const words = ["coffee", "tea", "lemonade"];
+// console.log(without(words, ["lemonade"])); // returns ["lemonade"]
+// console.log(assertArraysEqual(words, ["coffee", "tea", "lemonade"])); // it's a match!
+// console.log(assertArraysEqual(without(words, ["lemonade"]), ["lemonade"])); // it's a match!
+
+module.exports = without;

@@ -34,11 +34,12 @@ const flatten = function(array) {
   return flattenedArr;
 };
 
-//Test Case 1: Testing the flatten function
-console.log(flatten([1, 2, [3, 4], 5, [6]]));
-console.log(flatten([["Coffee"], "tea", ["cookies"]]));
-console.log(flatten([["Bananas"], "Cherries", ["Lemons", "Avocados"]]));
+// //Test Case 1: Testing the flatten function
+// console.log(flatten([1, 2, [3, 4], 5, [6]]));
+// console.log(flatten([["Coffee"], "tea", ["cookies"]]));
+// console.log(flatten([["Bananas"], "Cherries", ["Lemons", "Avocados"]]));
 
 //Test Case 2: Using the assertArraysEqual to test out 
-console.log(assertArraysEqual(flatten([1, 2, 3, [4, 5], 6]), [1, 2, 3, 4, 5, 6]));
+// console.log(assertArraysEqual(flatten([1, 2, 3, [4, 5], 6]), [1, 2, 3, 4, 5, 6]));
 
+module.exports = flatten;

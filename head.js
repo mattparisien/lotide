@@ -6,8 +6,6 @@ const head = function(array) {
   return firstVal;
 };
 
-console.log(head([5]))
-
 module.exports = head; 
 
 

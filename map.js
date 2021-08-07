@@ -28,18 +28,20 @@ const map = function(array, callback) {
   return results;
 };
 
-//TEST CASES
+// //TEST CASES
 
-const fruits = ["Banana", "Kiwi", "Strawberry", "Raspberry", "Blueberry"];
+// const fruits = ["Banana", "Kiwi", "Strawberry", "Raspberry", "Blueberry"];
 
-const numbers = [10, 120, 55, 4, 10, 2, 1];
+// const numbers = [10, 120, 55, 4, 10, 2, 1];
 
-const results1 = map(fruits, word  => word[0]);
-const results2 = map(numbers, num  => num * 2);
-const results3 = map(numbers, num  => num + " is divisible by two: " + (num % 2 === 0));
+// const results1 = map(fruits, word  => word[0]);
+// const results2 = map(numbers, num  => num * 2);
+// const results3 = map(numbers, num  => num + " is divisible by two: " + (num % 2 === 0));
 
-let assert = assertArraysEqual(results1, ['B', 'K', 'S', 'R', 'B']);
-assert = assertArraysEqual(results1, ['S', 'A', 'B', 'C', 'D']);
+// // let assert = assertArraysEqual(results1, ['B', 'K', 'S', 'R', 'B']);
+// // assert = assertArraysEqual(results1, ['S', 'A', 'B', 'C', 'D']);
 
-console.log(results3);
-console.log(assert);
+// // console.log(results3);
+// // console.log(assert);
+
+module.exports = map;

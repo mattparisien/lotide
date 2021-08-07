@@ -48,6 +48,8 @@ const testObj = {
   o: [4],
 }
 
-console.log(assertArraysEqual(result1.e, testObj.e)); //should match
-console.log(assertArraysEqual(result1.l, testObj.l)); // should match
-console.log(assertArraysEqual(result1[l], testObj.l)); // should match
+// console.log(assertArraysEqual(result1.e, testObj.e)); //should match
+// console.log(assertArraysEqual(result1.l, testObj.l)); // should match
+// console.log(assertArraysEqual(result1[l], testObj.l)); // should match
+
+module.exports = letterPositions;
