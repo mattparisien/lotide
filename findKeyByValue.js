@@ -8,27 +8,21 @@
 
 const findKeyByValue = function(object, value) {
 
+  if (typeof object !== 'object' || Array.isArray(object) || object === null) {
+    throw new Error('First argument must be an object.');
+  }
+  
   let key = "";
+  value = value.toLowerCase();
 
   for (item in object) {
-
-    if (object[item] === value) {
+    if (object[item].toLowerCase() === value) {
       key = item;
     } else {
       key = undefined;
     }
-    
   }
   return key;
 };
-
-// const bestTVShowsByGenre = { 
-//   sci_fi: "The Expanse",
-//   comedy: "Brooklyn Nine-Nine",
-//   drama:  "The Wire"
-// };
-
-// console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"));
-// console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined));
 
 module.exports = findKeyByValue;
