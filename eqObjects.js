@@ -27,8 +27,4 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-const ab = [];
-const ba = { b: "2", a: "1" };
-console.log(ab, ba);
-
 module.exports = eqObjects;
