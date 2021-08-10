@@ -31,27 +31,4 @@ const ab = [];
 const ba = { b: "2", a: "1" };
 console.log(ab, ba);
 
-
-// TEST CASES 
-// const ab = { a: "1", b: "2" };
-// const ba = { b: "2", a: "1" };
-// console.log(eqObjects(ab, ba)); // => true
-
-// const abc = { a: "1", b: "2", c: "3" };
-// console.log(eqObjects(ab, abc)); // => false
-
-// console.log(assertEqual(eqObjects(ab, ba), true)); // Assertion passes
-// console.log(assertEqual(eqObjects(ab, abc), true)); // Assertion should fail (false !== true);
-// console.log(assertEqual(eqObjects(ab, ab), true)); // Assertion passes
-
-// const cd = { c: "1", d: ["2", 3] };
-// // const dc = { d: ["2", 3], c: "1" };
-// // eqObjects(cd, dc); // => true
-
-// const cd2 = { c: "1", d: ["2", 3, 4] };
-// // eqObjects(cd, cd2); // => false
-
-// // console.log(assertEqual(eqObjects(cd, dc), true));
-// // console.log(assertEqual(eqObjects(cd, cd2), false));
-
 module.exports = eqObjects;
