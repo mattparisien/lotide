@@ -35,14 +35,10 @@ describe('#countOnly', () => {
   
     const actual = countOnly(firstNames, {"Caroline": true}); 
     const expected = {};
-
     assert.deepEqual(actual, expected);
   });
 
   it('should return an error if the second argument is not an object', () => {
-
     expect(() => {countOnly(firstNames, ["Caroline"])}).to.throw(Error);
   })
-
-
 });
