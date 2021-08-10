@@ -29,4 +29,15 @@ describe('#letterPositions', () => {
     
     assert.deepEqual(actual, expected);
   });
-})
+
+  it('still returns an object if passed in symbols as an argument', () => {
+    const actual = letterPositions('%%&&!&!');
+    const expected = {
+      "%": [0, 1],
+      "&": [2, 3, 5],
+      "!": [4, 6]
+    }
+    assert.deepEqual(actual, expected);
+  });
+  
+});
