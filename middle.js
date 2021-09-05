@@ -5,7 +5,7 @@
 
 
 // ACTUAL FUNCTION
-const getMiddle = function(array) {
+const middle = function(array) {
   let middleIndex = Math.ceil((array.length) / 2 - 1); 
   const middleValues = [];
 
@@ -17,4 +17,4 @@ const getMiddle = function(array) {
   return middleValues;
 };
 
-module.exports = getMiddle;
+module.exports = middle;

@@ -1,7 +1,7 @@
 const chai = require('chai');
 const assert = chai.assert;
 const expect = chai.expect;
-const takeUntil = require('../takeuntil');
+const { takeUntil } = require('../takeuntil');
 
 const data = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 

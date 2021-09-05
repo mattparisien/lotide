@@ -1,8 +1,13 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "name": "@mattparisien/lotide",
+  "version": "1.0.1",
+  "description": "Lotide is a mini-clone of the Lodash library.",
+  "keywords": [
+    "lodash",
+    "lighthouse labs",
+    "lotide library"
+  ],  
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/mattparisien/lotide.git"
   },
-  "author": "",
+  "author": "Matthew Parisien",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mattparisien/lotide/issues"

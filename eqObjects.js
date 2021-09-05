@@ -3,7 +3,7 @@ const eqObjects = function(object1, object2) {
   const holder = [object1, object2];
   holder.forEach((arg) => {
     if (typeof arg !== 'object' || Array.isArray(arg) || typeof arg === null) {
-      throw new Error('Argument should be of type \'object\'')
+      throw new Error('Argument should be an object\'')
     };
   });
 

@@ -26,15 +26,11 @@ const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
   const result = eqObjects(actual, expected);
 
-  if (result === true) {
+  if (result) {
     console.log(`Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
     console.log(`Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
-
 };
-
-//TEST CASES
-// console.log(assertObjectsEqual({Matt: 1, Caroline: 2, Denis: 3}, {Matt: 1, Caroline: 2, Denis: 3}));
 
 module.exports = assertObjectsEqual;

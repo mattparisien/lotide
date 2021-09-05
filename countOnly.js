@@ -1,52 +1,22 @@
-// const assertEqual = function(actual, expected) {
-//   if (actual === expected) {
-//     console.log(`👑👑👑 Assertion Passed: ${actual} === ${expected}`);
-//   } else if (actual !== expected) {
-//     console.log(`💩💩💩 Assertion Failed: ${actual} !== ${expected}`);
-//   }
-// };
+const countOnly = function (allItems, itemsToCount) {
 
-
-const countOnly = function(allItems, itemsToCount) {
-  const results = {};
-
-  for (const item of allItems) {
-
-    if (itemsToCount[item]) {
-      if (results[item]) {
-        results[item] += 1;
-      } else {
-        results[item] = 1;
-      }
-    }
-    
+  if (Object.getPrototypeOf(itemsToCount) !== Object.prototype) {
+    throw new Error('Second argument must be an object.');
   }
 
-  return results;
+  const finalCount = {};
+  for (name in itemsToCount) {
+    if (itemsToCount[name]) {
+      let counter = 0;
+      allItems.forEach((el) => {
+        if (name === el) {
+          counter++;
+          finalCount[name] = counter;
+        }
+      });
+    }
+  }
+  return finalCount;
 };
-
-
-
-// const firstNames = [
-//   "Karl",
-//   "Salima",
-//   "Agouhanna",
-//   "Fang",
-//   "Kavith",
-//   "Jason",
-//   "Salima",
-//   "Fang",
-//   "Joe"
-// ];
-
-
-// TEST CASES
-
-// const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-// console.log(result1);
-// console.log(assertEqual(result1["Jason"], 1));
-// console.log(assertEqual(result1["Karima"], undefined));
-// console.log(assertEqual(result1["Fang"], 2));
-// console.log(assertEqual(result1["Agouhanna"], undefined));
 
 module.exports = countOnly;

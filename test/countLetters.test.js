@@ -32,5 +32,5 @@ describe('#countLetters', () => {
     };
 
     assert.deepEqual(actual, expected);
-  })
+  });
 })

@@ -1,24 +1,24 @@
-const eqArrays = function(arrOne, arrTwo) {
-  let str = "";
-  for (let i = 0; i < arrOne.length; i++) {
-    if (arrOne[i] === arrTwo[i]) {
-      str += arrOne[i];
-    }
-  }
-  let compareStr = arrOne.join("");
-  if (compareStr === str) {
-    return true;
-  }
-  return false;
-};
+// const eqArrays = function(arrOne, arrTwo) {
+//   let str = "";
+//   for (let i = 0; i < arrOne.length; i++) {
+//     if (arrOne[i] === arrTwo[i]) {
+//       str += arrOne[i];
+//     }
+//   }
+//   let compareStr = arrOne.join("");
+//   if (compareStr === str) {
+//     return true;
+//   }
+//   return false;
+// };
 
-const assertArraysEqual = function(arrOne, arrTwo) {
-  if (eqArrays(arrOne, arrTwo) === true) {
-    console.log("The two arrays match!");
-  } else {
-    console.log("The two arrays do not match.");
-  }
-};
+// const assertArraysEqual = function(arrOne, arrTwo) {
+//   if (eqArrays(arrOne, arrTwo) === true) {
+//     console.log("The two arrays match!");
+//   } else {
+//     console.log("The two arrays do not match.");
+//   }
+// };
 
 const map = function(array, callback) {
   const results = [];
@@ -28,11 +28,14 @@ const map = function(array, callback) {
   return results;
 };
 
+
+
 // //TEST CASES
 
 // const fruits = ["Banana", "Kiwi", "Strawberry", "Raspberry", "Blueberry"];
-
 // const numbers = [10, 120, 55, 4, 10, 2, 1];
+// const result = map(fruits, fruit => fruit + " is a fruit")
+// console.log(result)
 
 // const results1 = map(fruits, word  => word[0]);
 // const results2 = map(numbers, num  => num * 2);

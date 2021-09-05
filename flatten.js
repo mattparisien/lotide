@@ -1,8 +1,9 @@
 const flatten = function(array) {
   let flattenedArr = [];
-  
+
   array.flat().forEach(val => {
-    if (Array.isArray(val)) {
+    console.log(array.lastIndexOf(val))
+    if (Array.isArray(val) || val === null) {
       throw new Error;
     }
   })
@@ -23,5 +24,7 @@ const flatten = function(array) {
   // })
   return flattenedArr;
 };
+
+console.log(flatten([]))
 
 module.exports = flatten;

@@ -16,5 +16,5 @@ describe('#without', () => {
 
   it('should return an error if the second argument is not an array', () => {
     expect(() => {without(words, "caroline")}).to.throw(Error);
-  })
+  });
 })

@@ -7,6 +7,11 @@
 // };
 
 const countLetters = function(string) {
+
+  if (typeof string !== 'string') {
+    throw new Error('String must be of type \'string\'');
+  }
+
   const obj = {};
   for (letter of string) {
     if (obj[letter]) {
