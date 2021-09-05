@@ -1,6 +1,8 @@
-const eqArrays = require('./eqArrays');
+//Asserts whether two arrays are equal or not
 
-const assertArraysEqual = function(arrOne, arrTwo) {
+const eqArrays = require("./eqArrays");
+
+const assertArraysEqual = function (arrOne, arrTwo) {
   if (eqArrays(arrOne, arrTwo) === true) {
     console.log("The two arrays match!");
   } else {
