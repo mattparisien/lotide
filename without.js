@@ -1,3 +1,7 @@
+//Returns a filtered array without the elements specified by itemsToRemove
+//source param: original array
+//itemsToRemove param: specifies items to remove from original array (must be an array)
+
 const without = function(source, itemsToRemove) {
 
   const finalArr = [];

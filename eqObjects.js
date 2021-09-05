@@ -1,3 +1,5 @@
+//Iterates through two objects and returns true or false depending on if they are equal or not
+
 const eqObjects = function(object1, object2) {
   
   const holder = [object1, object2];

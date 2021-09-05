@@ -17,11 +17,6 @@ const flatten = function(array) {
       flattenedArr.push(array[i]);
     }
   }
-  // flattenedArr.forEach(val => {
-  //   if (Array.isArray(val)) {
-  //     throw new Error;
-  //   };
-  // })
   return flattenedArr;
 };
 

@@ -1,6 +1,7 @@
-const takeUntil = function(array, callback) {
+//Returns all values in a given array until the element specified by the callback
 
-const finalArr = [];
+const takeUntil = function (array, callback) {
+  const finalArr = [];
 
   for (item of array) {
     if (!callback(item)) {
@@ -11,4 +12,4 @@ const finalArr = [];
   }
 };
 
-module.exports = { takeUntil };
+module.exports = takeUntil;

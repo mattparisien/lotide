@@ -22,5 +22,11 @@ describe('#middle', () => {
     const expected = ["Bananas", "Kiwis"];
     assert.deepEqual(result, expected);
   });
+
+  it('should return an empty array if few 2 or less elements are in the array', () => {
+    const result = middle([1, 2]);
+    const expected = [];
+    assert.deepEqual(result, expected);
+  })
 });
 

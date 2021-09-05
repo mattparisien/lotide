@@ -1,3 +1,6 @@
+/* Returns an object with key values pairs corresponding 
+to a given string's characters and their indexes positions */
+
 const letterPositions = function(string) {
   const results = {};
   let count = 0;
@@ -16,5 +19,7 @@ const letterPositions = function(string) {
 }
   return results;
 };
+
+console.log(letterPositions("matthew"))
 
 module.exports = letterPositions;
